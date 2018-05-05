@@ -11,9 +11,36 @@
                         <br>
                         <br>
 
-                        @foreach($tasks as $task)
-                            {{$task->title}} {{$task->body}}<br>
-                        @endforeach
+
+
+
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th scope="col">№</th>
+                                <th scope="col">title</th>
+                                <th scope="col">body</th>
+                                <th scope="col">edit</th>
+                                <th scope="col">delete</th>
+
+                            </tr>
+                            </thead>
+                            <tbody>
+                            @foreach($tasks as $task)
+
+
+                                <tr>
+                                    <th scope="row">{{$task->id}}</th>
+                                    <td>{{$task->title}}</td>
+                                    <td>{{$task->body}}</td>
+                                    <td>edit</td>
+                                    <td>delete</td>
+                                </tr>
+
+                            @endforeach
+                            </tbody>
+                        </table>
+                        <button type="button" class="btn btn-success">Add new task</button>
                     </div>
                 </div>
             </div>
