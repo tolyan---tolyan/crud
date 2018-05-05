@@ -40,7 +40,9 @@
                             @endforeach
                             </tbody>
                         </table>
-                        <button type="button" class="btn btn-success">Add new task</button>
+                        {{link_to_route('task.create', 'Add new Task', null, ['class'=>'btn btn-primary']) }}
+
+
                     </div>
                 </div>
             </div>

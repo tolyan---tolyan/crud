@@ -26,7 +26,7 @@ class TaskController extends Controller
      */
     public function create()
     {
-        //
+        return view('tasks.create');
     }
 
     /**
@@ -37,7 +37,9 @@ class TaskController extends Controller
      */
     public function store(Request $request)
     {
-        //
+//        Task::create($request->all());
+//        return redirect()->route('tasks.index')->with('message','task has been added successfull');
+//
     }
 
     /**
