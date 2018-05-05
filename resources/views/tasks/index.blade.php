@@ -8,7 +8,12 @@
                     <div class="panel-heading">Task</div>
                     <div class="panel-body">
                         <label for="name" class="col-md-4 control-label">Task</label>
+                        <br>
+                        <br>
 
+                        @foreach($tasks as $task)
+                            {{$task->title}} {{$task->body}}<br>
+                        @endforeach
                     </div>
                 </div>
             </div>
