@@ -41,7 +41,12 @@
                                     <td>
                                         {{link_to_route('task.edit', 'Edit', [$task->id], ['class'=>'btn btn-primary']) }}
                                     </td>
-                                    <td>delete</td>
+
+                                    <td>
+                                        {!! Form::open(array('route'=>['task.destroy',$task->id],'method'=>'DELETE')) !!}
+                                            {!! Form::button('Delete',['class'=>'btn btn-danger','type'=>'submit']) !!}
+                                        {!! Form::close() !!}
+                                    </td>
                                 </tr>
 
                             @endforeach
