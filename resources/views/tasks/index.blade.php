@@ -36,7 +36,7 @@
 
                                 <tr>
                                     <th scope="row">{{$task->id}}</th>
-                                    <td>{{$task->title}}</td>
+                                    <td>{{ link_to_route('task.show', $task->title,[$task->id]) }}</td>
                                     <td>{{$task->body}}</td>
                                     <td>
                                         {{link_to_route('task.edit', 'Edit', [$task->id], ['class'=>'btn btn-primary']) }}

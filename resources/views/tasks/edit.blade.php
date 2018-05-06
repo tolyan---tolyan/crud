@@ -11,7 +11,7 @@
                         <br>
                         <br>
 
-                        our form
+
                         {!! Form::model($task, array('route' => ['task.update', $task->id], 'method'=>'PUT')) !!}
 
                             <div class = "form-group">

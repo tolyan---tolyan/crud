@@ -11,7 +11,7 @@
                         <br>
                         <br>
 
-                        our form
+
                         {!! Form::open(array('route' => 'task.store')) !!}
 
                             <div class = "form-group">
