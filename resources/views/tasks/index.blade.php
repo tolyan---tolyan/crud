@@ -7,6 +7,11 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">Task</div>
                     <div class="panel-body">
+
+                        @if(Session::has('message'))
+                            <div class="alert alert-success"> {{ Session::get('message') }} </div>
+                        @endif
+
                         <label for="name" class="col-md-4 control-label">Task</label>
                         <br>
                         <br>
