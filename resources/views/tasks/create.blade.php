@@ -25,7 +25,7 @@
                             </div>
 
                             <div class = "form-group">
-                                {!! Form::button('Create', ['type' => 'submit', 'class' => 'btn btn-primary']) !!}
+                                {!! Form::button('Create', ['type' => 'submit', 'class' => 'btn btn-success']) !!}
                             </div>
 
                         {!! Form::close() !!}

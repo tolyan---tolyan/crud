@@ -38,14 +38,16 @@
                                     <th scope="row">{{$task->id}}</th>
                                     <td>{{$task->title}}</td>
                                     <td>{{$task->body}}</td>
-                                    <td>edit</td>
+                                    <td>
+                                        {{link_to_route('task.edit', 'Edit', [$task->id], ['class'=>'btn btn-primary']) }}
+                                    </td>
                                     <td>delete</td>
                                 </tr>
 
                             @endforeach
                             </tbody>
                         </table>
-                        {{link_to_route('task.create', 'Add new Task', null, ['class'=>'btn btn-primary']) }}
+                        {{link_to_route('task.create', 'Add new Task', null, ['class'=>'btn btn-success']) }}
 
 
                     </div>
